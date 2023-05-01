@@ -17,4 +17,9 @@ public class EstudianteServiceImpl implements EstudianteService{
     public List<Estudiante> listarTodosEstudiantes() {
         return estudianteRepository.findAll();
     }
+
+    @Override
+    public Estudiante guardarEstudiante(Estudiante estudiante) {
+        return estudianteRepository.save(estudiante);
+    }
 }

@@ -9,4 +9,5 @@ import java.util.List;
 public interface EstudianteService {
     public List<Estudiante> listarTodosEstudiantes();
 
+    public Estudiante guardarEstudiante(Estudiante estudiante);
 }
