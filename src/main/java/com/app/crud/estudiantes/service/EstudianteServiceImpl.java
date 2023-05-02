@@ -22,4 +22,19 @@ public class EstudianteServiceImpl implements EstudianteService{
     public Estudiante guardarEstudiante(Estudiante estudiante) {
         return estudianteRepository.save(estudiante);
     }
+
+    @Override
+    public Estudiante obtenerEstudiantePorId(Long id) {
+        return estudianteRepository.findById(id).get();
+    }
+
+    @Override
+    public Estudiante actualizarEstudiante(Estudiante estudiante) {
+        return estudianteRepository.save(estudiante);
+    }
+
+    @Override
+    public void eliminarEstudiante(Long id) {
+        estudianteRepository.deleteById(id);
+    }
 }
